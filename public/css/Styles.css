@@ -126,13 +126,21 @@ h1::first-line{
     text-align: center;  
     display: none;       
  }
- .buttonPizza1{     
+ .buttonPizza1{
+    padding:5px;
+    border-radius: 10px;     
+    background-color: red;
+    color:red;
     height:30px;     
     position: absolute;      
     left: 20%;
     top: 90%;
  }
- .buttonPizza2{      
+ .buttonPizza2{  
+    padding:5px;
+    border-radius: 10px;    
+    background-color: red;
+    color:red;
     height:30px; 
     position: absolute;  
     left: 78%;

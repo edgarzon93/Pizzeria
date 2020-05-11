@@ -18,8 +18,8 @@ var images1 = [
     'css/Imagenes/Pizzas4.JPG'
 ];
 var images2 = [
-    'css/Imagenes/Panzeroti_1.JPG',
-    'css/Imagenes/Panzeroti_2.JPG'    
+    'css/Imagenes/Panzeroti1.JPG',
+    'css/Imagenes/Panzeroti2.JPG'    
 ];
 var num = 0;
 function next1() {  
