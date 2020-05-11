@@ -82,7 +82,12 @@ h1::first-line{
     text-decoration: none;
 }
 .opciones li a:hover{
-    color: rgb(255, 215, 107);
+    color: rgb(126, 94, 6);
+    transition: all 0.5s;
+}
+.opciones .submenu1 li a:hover{
+   
+    background: orange;
     transition: all 0.5s;
 }
 /* submenu1 */
@@ -113,15 +118,62 @@ h1::first-line{
     visibility: visible;
     opacity: 1;
 } 
-.submenu1 a:hover{
-    background: rgb(228, 95, 43);
-}
- #box_pizza1{
+#box_pizza1{
     max-width: 100%;
     text-align: center;  
     display: none;  
  }
  #box_pizza2{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza3{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza4{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza5{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza6{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza7{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza8{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza9{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza10{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza11{
+    max-width: 100%;
+    text-align: center;  
+    display: none;       
+ }
+ #box_pizza12{
     max-width: 100%;
     text-align: center;  
     display: none;       
