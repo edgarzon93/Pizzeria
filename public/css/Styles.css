@@ -82,7 +82,7 @@ h1::first-line{
     text-decoration: none;
 }
 .opciones li a:hover{
-    color: rgb(126, 94, 6);
+    color: rgb(233, 204, 42);
     transition: all 0.5s;
 }
 .opciones .submenu1 li a:hover{
