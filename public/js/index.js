@@ -1,31 +1,31 @@
 var images1 = [
-    'css/Imagenes/Pizzas1.JPG','css/Imagenes/Pizzas2.JPG','css/Imagenes/Pizzas3.JPG','css/Imagenes/Pizzas4.JPG'];
+    'css/Imagenes/Pizzas1.JPG', 'css/Imagenes/Pizzas2.JPG', 'css/Imagenes/Pizzas3.JPG', 'css/Imagenes/Pizzas4.JPG'];
 var images2 = [
-    'css/Imagenes/Panzeroti1.JPG','css/Imagenes/Panzeroti2.JPG'];
-var images3 =[
+    'css/Imagenes/Panzeroti1.JPG', 'css/Imagenes/Panzeroti2.JPG'];
+var images3 = [
     'css/Imagenes/Lasagna_spaguettis.JPG'];
 var images4 = [
     'css/Imagenes/Menu_infantil.JPG'];
-var images5 =[
-    'css/Imagenes/hamb1.JPG','css/Imagenes/hamb2.JPG'];
-var images6 =[
+var images5 = [
+    'css/Imagenes/hamb1.JPG', 'css/Imagenes/hamb2.JPG'];
+var images6 = [
     'css/Imagenes/perros1.JPG'];
-var images7 =[
+var images7 = [
     'css/Imagenes/sandwich1.JPG'];
-var images8 =[
+var images8 = [
     'css/Imagenes/shawarma1.JPG'];
-var images9 =[
-        'css/Imagenes/deliciasRapidas1.JPG'];
-var images10 =[
-        'css/Imagenes/papasLocas1.JPG'];
-var images11 =[
-        'css/Imagenes/mazorcadas1.JPG'];
-var images12 =[
-        'css/Imagenes/bebidas1.JPG'];
-var images13 =[
-        'css/Imagenes/adicionales1.JPG'];
-    
-        
+var images9 = [
+    'css/Imagenes/deliciasRapidas1.JPG'];
+var images10 = [
+    'css/Imagenes/papasLocas1.JPG'];
+var images11 = [
+    'css/Imagenes/mazorcadas1.JPG'];
+var images12 = [
+    'css/Imagenes/bebidas1.JPG'];
+var images13 = [
+    'css/Imagenes/adicionales1.JPG'];
+
+
 
 var num = 0;
 
@@ -135,7 +135,7 @@ function show(menu) {
             document.getElementById('slider').src = 'css/Imagenes/adicionales_c.jpg';
             document.getElementById('slider').style.height = '310px';
             break;
-      
+
     }
 
 }
