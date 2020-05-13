@@ -117,36 +117,63 @@ h1::first-line{
 .opciones li:hover .submenu1 {
     visibility: visible;
     opacity: 1;
-} 
-#box_pizza1{
-    max-width: 100%;
+}
+
+#box_inicio{
     text-align: center;  
-    display: none;  
+} 
+#portada{
+    box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.6); 
+    border-radius: 5% 5% 5% 5%; 
+}
+#box_pizza1{
+    width: 100%;
+    text-align: center;  
+    display: none;       
+    
  }
-
- .buttonPizza1{
-    padding:5px;
-    border-radius: 10px;     
-    background-color: red;
-    color:red;
-    height:30px;     
+ #encabezado{
+    width:50%;
+    height:80px;
+    box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.6); 
+}
+#slider{
+    width:50%;
+    height:350px;
+    border-radius: 0 0 10% 10%;  
+    box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.6); 
+}
+ .buttonPizza1{    
+    border-radius: 50% 40% 40% 50%;  
+    border: 1px solid white;   
+    background: -webkit-radial-gradient(right center, rgb(255, 0, 0, 0.3) 30%, rgb(250, 213, 4, 0.7) 100%);
+    box-shadow: 0 0 15px rgba(230, 223, 223, 0.8);
+    color: white;
+    font-size: 50px;  
+    opacity: 0.5;  
+    height:100px;    
+    width: 100px; 
     position: absolute;      
-    left: 20%;
-    top: 90%;
- }
+    left: 10%;
+    top: 60%;
+ } 
  .buttonPizza2{  
-    padding:5px;
-    border-radius: 10px;    
-    background-color: red;
-    color:red;
-    height:30px; 
+    border-radius: 40% 50% 50% 40%;  
+    border: 1px solid white;   
+    background: -webkit-radial-gradient(left center, rgb(255, 0, 0, 0.3) 30%, rgb(250, 213, 4, 0.7) 100%);
+    box-shadow: 0 0 15px rgba(230, 223, 223, 0.8);
+    color: white;
+    font-size: 50px;  
+    opacity: 0.5;  
+    height:100px;    
+    width: 100px; 
     position: absolute;  
-    left: 78%;
-    top: 90%;        
+    right: 10%;
+    top: 60%;        
  }  
-
- 
- 
 .face{
 width: 50px;
 height: 40px;
@@ -158,20 +185,39 @@ footer{
 }
 @media screen and (max-width: 640px){
     h1{
-        font-size: 70%;
+        font-size: 40%;
         letter-spacing: 4px;
         word-spacing: 2px;
     }
     .opciones >li >a{      
         padding: 3% 5px; 
-        font-size: 50%;      
+        font-size: 60%;      
     }
     .submenu1 li a{
         padding: 3px ;
-        font-size: 40%;  
+        font-size: 50%;  
     }
-    #slider1 {
-        height: 200PX;
+    #encabezado{
+        width:70%;
+        height:80px;
+     }
+    #slider{
+        width:70%;
+        height:300px;
+    }
+    .buttonPizza1{
+        width: 45px;
+        height: 45px;
+        font-size: 30px; 
+        top:80%;
+        left: 3%;
+    }
+    .buttonPizza2{
+        width: 45px;
+        height: 45px;
+        font-size: 30px; 
+        top: 80%;
+        right: 3%;
     }
 } 
 @media screen and (min-width: 641px) and (max-width: 1200px){
@@ -182,26 +228,31 @@ footer{
     }
    .opciones >li >a{          
         padding: 15px;    
-        font-size: 70%;      
+        font-size: 100%;      
     }
-    .submenu1 li a{
-        
+    .submenu1 li a{        
         font-size: 70%;  
     } 
-}
-@media screen and (max-width: 639px) and (min-width: 100px){
-    h1{
-        font-size: 30%;
-        letter-spacing: 4px;
-        word-spacing: 4px;
+    #encabezado{
+        width:80%;
+        height:80px;
+     }
+    #slider{
+        width:80%;
+        height:350px;
     }
-    .opciones >li >a{  
-        padding: 0.5% 2px;    
-    
-        font-size: 10%;      
+    .buttonPizza1{
+        width: 45px;
+        height: 45px;
+        font-size: 30px; 
+        top:80%;
+        left: 3%;
     }
-    .submenu1 li a{
-        
-        font-size: 10%;  
-    } 
+    .buttonPizza2{
+        width: 45px;
+        height: 45px;
+        font-size: 30px; 
+        top: 80%;
+        right: 3%;
+    }
 }

@@ -7,7 +7,7 @@ var images3 = [
 var images4 = [
     'css/Imagenes/Menu_infantil.JPG'];
 var images5 = [
-    'css/Imagenes/hamb1.JPG', 'css/Imagenes/hamb2.JPG'];
+    'css/Imagenes/hamb1.JPG','css/Imagenes/hamb2.JPG'];
 var images6 = [
     'css/Imagenes/perros1.JPG'];
 var images7 = [
@@ -24,13 +24,34 @@ var images12 = [
     'css/Imagenes/bebidas1.JPG'];
 var images13 = [
     'css/Imagenes/adicionales1.JPG'];
-
-
+var imgPortada = [
+    'css/Imagenes/portada/portada1.jpeg','css/Imagenes/portada/portada2.jpeg','css/Imagenes/portada/portada3.jpeg',
+    'css/Imagenes/portada/portada4.jpeg','css/Imagenes/portada/portada5.jpeg','css/Imagenes/portada/portada6.jpeg',
+    'css/Imagenes/portada/portada7.jpeg','css/Imagenes/portada/portada8.jpeg','css/Imagenes/portada/portada9.jpeg',
+    'css/Imagenes/portada/portada10.jpeg','css/Imagenes/portada/portada11.jpeg','css/Imagenes/portada/portada12.jpeg',
+    'css/Imagenes/portada/portada13.jpeg','css/Imagenes/portada/portada14.jpeg','css/Imagenes/portada/portada15.jpeg'
+]
 
 var num = 0;
+var change = document.getElementById('portada');
 
-function show(menu) {
+ function inicio(){     
+   num++;
+   if (num >= imgPortada.length) {
+        num = 0;
+    }
+    change.src = imgPortada[num];
+}
+setInterval(inicio, 5000);
+
+
+
+function show(menu) {    
     switch (menu) {
+        case 'portada':
+            document.getElementById('box_inicio').style.display = 'block';   
+            document.getElementById('box_pizza1').style.display = 'none';     
+            break; 
         case 'pizza':
             menuActual = 'pizza'
             document.getElementById('box_pizza1').style.display = 'block';
@@ -38,6 +59,7 @@ function show(menu) {
             document.getElementById('slider').src = 'css/Imagenes/pizza_c.png';
             document.getElementById('encabezado').style.height = '70px';
             document.getElementById('slider').style.height = '340px';
+            document.getElementById('box_inicio').style.display = 'none';
             break;
         case 'panzeroti':
             menuActual = 'panzeroti'
@@ -84,7 +106,7 @@ function show(menu) {
             document.getElementById('box_pizza1').style.display = 'block';
             document.getElementById('encabezado').src = 'css/Imagenes/sandwich_header.JPG';
             document.getElementById('encabezado').style.height = '100px';
-            document.getElementById('slider').src = 'css/Imagenes/sandwich_c';
+            document.getElementById('slider').src = 'css/Imagenes/sandwich_c.jpg';
             document.getElementById('slider').style.height = '310px';
             break;
         case 'shawarma':
@@ -140,7 +162,56 @@ function show(menu) {
 
 }
 function next1() {
-
+    let array;
+    switch (menuActual) {
+        case 'pizza':
+            array = images1
+            break;
+        case 'panzeroti':
+            array = images2
+            break;
+        case 'lasaganaEspaguetti':
+            array = images3
+            break;
+        case 'menuInfantil':
+            array = images4
+            break;
+        case 'hamburguesas':
+            array = images5
+            break;
+        case 'perros':
+            array = images6
+            break;
+        case 'sandwich':
+            array = images7
+            break;
+        case 'shawarma':
+            array = images8
+            break;
+        case 'deliciasRapidas':
+            array = images9
+            break;
+        case 'papasLocas':
+            array = images10
+            break;
+        case 'mazorcadas':
+            array = images11
+            break;
+        case 'bebidas':
+            array = images12
+            break;
+        case 'adicionales':
+            array = images13
+            break;
+    }
+    var slider = document.getElementById('slider');
+    num++;
+    if (num >= array.length) {
+        num = 0;
+    }
+    slider.src = array[num];
+}
+function prev1() {
     let array;
     switch (menuActual) {
         case 'pizza':
@@ -185,33 +256,12 @@ function next1() {
     }
 
     var slider = document.getElementById('slider');
-    num++;
-    if (num >= array.length) {
-        num = 0;
-    }
-    slider.src = array[num];
-}
-function prev1() {
-
-    let array;
-    switch (menuActual) {
-        case 'pizza':
-            array = images1
-            break;
-        case 'panzeroti':
-            array = images2
-            break;
-    }
-
-    var slider = document.getElementById('slider');
     num--;
     if (num < 0) {
         num = array.length - 1;
     }
     slider.src = array[num];
 }
-
-
 
 
 
