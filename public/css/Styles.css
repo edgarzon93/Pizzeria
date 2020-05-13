@@ -207,6 +207,10 @@ h1::first-line{
         top: 80%;
         right: 3%;
     }
+    #fooster {
+        font-size: 40%;
+    }
+    
 } 
 @media screen and (min-width: 641px) and (max-width: 1000px){
     h1{
@@ -242,5 +246,8 @@ h1::first-line{
         font-size: 30px; 
         top: 80%;
         right: 3%;
+    }
+    #fooster {
+        font-size: 70%;
     }
 }
