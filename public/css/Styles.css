@@ -122,10 +122,22 @@ h1::first-line{
 #box_inicio{
     text-align: center;  
 } 
+#portadaLeft{
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85% ); 
+  border-radius: 2%;   
+  opacity: 0.5;  
+} 
+#portadaRight{     
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100% ); 
+    border-radius: 2%;
+    opacity: 0.5;      
+  } 
 #portada{
     box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
     inset 0 0 5px rgba(255, 255, 255, 0.6); 
-    border-radius: 5% 5% 5% 5%; 
+    border-radius: 2%;     
+    margin-top: 1%;
+    
 }
 #box_pizza1{
     width: 100%;
