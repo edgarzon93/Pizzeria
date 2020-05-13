@@ -130,6 +130,7 @@ h1::first-line{
 #portadaRight{     
     clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100% ); 
     border-radius: 2%;
+    transform-style: preserve-3d;
     opacity: 0.5;      
   } 
 #portada{
