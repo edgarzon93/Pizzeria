@@ -1,0 +1,114 @@
+*{  margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+#box_inicio{
+   width: 13%;
+   perspective: 1000px;
+   position: relative;
+   z-index: 2;
+   margin-top: 5%;   
+   margin-left: 42%;
+   
+   
+}
+#contentCarrousel{
+    width: 100%;
+    position: absolute; 
+    animation: rotar 50s infinite linear;
+    transform-style: preserve-3d;
+}
+#contentCarrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+#contentCarrousel figure{
+    width: 100%;
+    height: 170px;    
+    overflow: hidden; 
+    position: absolute; 
+    box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.6); 
+}
+#contentCarrousel figure:hover{
+    box-shadow: 0 0 0 0 rgba(230, 223, 223, 0.8),
+    inset 0 0 0px rgba(255, 255, 255, 0.6); 
+    transition: all 300ms;
+
+}
+#contentCarrousel figure:nth-child(1){transform: rotatey(0deg) translatez(350px);}
+#contentCarrousel figure:nth-child(2){transform: rotatey(30deg) translatez(350px);}
+#contentCarrousel figure:nth-child(3){transform: rotatey(60deg) translatez(350px);}
+#contentCarrousel figure:nth-child(4){transform: rotatey(90deg) translatez(350px);}
+#contentCarrousel figure:nth-child(5){transform: rotatey(120deg) translatez(350px);}
+#contentCarrousel figure:nth-child(6){transform: rotatey(150deg) translatez(350px);}
+#contentCarrousel figure:nth-child(7){transform: rotatey(180deg) translatez(350px);}
+#contentCarrousel figure:nth-child(8){transform: rotatey(210deg) translatez(350px);}
+#contentCarrousel figure:nth-child(9){transform: rotatey(240deg) translatez(350px);}
+#contentCarrousel figure:nth-child(10){transform: rotatey(270deg) translatez(350px);}
+#contentCarrousel figure:nth-child(11){transform: rotatey(300deg) translatez(350px);}
+#contentCarrousel figure:nth-child(12){transform: rotatey(330deg) translatez(350px);}
+#contentCarrousel figure:nth-child(13){transform: rotatey(360deg) translatez(350px);}
+
+#contentCarrousel img{
+    width: 100%; 
+    height: 100%;
+    
+}
+
+@keyframes rotar{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg)}
+    
+}
+
+#fooster{
+    background:url(Imagenes/Footer_fondo.jpg);
+    position:absolute;
+    width: 100%;
+    height: 100px;    
+    box-shadow: 0 0 20px rgb(231, 231, 231),
+    inset 0 0 10px rgba(189, 132, 47, 0.6); 
+    top:100%;    
+}
+#fooster p:nth-child(2)  {
+    position: absolute;
+    font-family: cursive;      
+    text-shadow: 8px 5px 5px rgb(238, 148, 30);    
+    color: white;
+    margin-left:20%;
+    font-size: 100%;
+    text-align: center;
+}
+#fooster p:nth-child(3) {
+    position: absolute;
+    font-family: cursive;      
+    text-shadow: 8px 5px 5px rgb(238, 148, 30);    
+    color: white;
+    margin-left: 45%;
+    font-size: 100%;
+    
+}
+#footer0{
+    background: url(Imagenes/footer1.png) no-repeat left, url(Imagenes/footer2.png) no-repeat right;
+    position: absolute;
+    background-size: contain;    
+    width: 96%;
+    height: 70px;
+    margin: 2%;
+    
+}
+ #footer1{
+    width: 4%;    
+    position: absolute;
+    background-size: contain;
+    right: 45%;
+    top: 40%;       
+} 
+#footer2{
+    width: 4%;    
+    position: absolute;
+    right: 25%;
+    top: 40%;       
+} 

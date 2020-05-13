@@ -24,27 +24,9 @@ var images12 = [
     'css/Imagenes/bebidas1.JPG'];
 var images13 = [
     'css/Imagenes/adicionales1.JPG'];
-var imgPortada = [
-    'css/Imagenes/portada/portada1.jpeg','css/Imagenes/portada/portada2.jpeg','css/Imagenes/portada/portada3.jpeg',
-    'css/Imagenes/portada/portada4.jpeg','css/Imagenes/portada/portada5.jpeg','css/Imagenes/portada/portada6.jpeg',
-    'css/Imagenes/portada/portada7.jpeg','css/Imagenes/portada/portada8.jpeg','css/Imagenes/portada/portada9.jpeg',
-    'css/Imagenes/portada/portada10.jpeg','css/Imagenes/portada/portada11.jpeg','css/Imagenes/portada/portada12.jpeg',
-    'css/Imagenes/portada/portada13.jpeg','css/Imagenes/portada/portada14.jpeg','css/Imagenes/portada/portada15.jpeg'
-]
+
 
 var num = 0;
-var change = document.getElementById('portada');
-
- function inicio(){     
-   num++;
-   if (num >= imgPortada.length) {
-        num = 0;
-    }
-    change.src = imgPortada[num];
-}
-setInterval(inicio, 5000);
-
-
 
 function show(menu) {    
     switch (menu) {

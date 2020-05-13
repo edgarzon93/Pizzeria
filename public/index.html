@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzeria Escuby-Du!</title>
   <link rel="stylesheet" href="css/Styles.css">
+  <link rel="stylesheet" href="css/StylesPortada.css">
   <link rel="icon" href="css/Imagenes/Logo_icono.ico">
 </head>
 
@@ -15,6 +16,9 @@
       <h1 onclick="show('portada')" class="logo1">PIZZERIA ESCUBY-DU!<br /> El misterio de la pizza
         <hr width="100%" />
       </h1>
+      <div class="pizza">
+      </div>
+      <div class="pizza_2"></div> 
       <nav class="navegacion">
         <ul class="opciones">
           <li><a href="#">Nuestro Menu</a>
@@ -39,42 +43,48 @@
           <li><a href="#">Contactanos</a></li>
         </ul>
       </nav>
-     
-    </header>  
-    <article id="box_pizza1">      
-      <img id="encabezado" src="" >
+
+    </header>
+    <article id="box_pizza1">
+      <img id="encabezado" src="">
       <button class="buttonPizza1" onclick="prev1()"> < </button>
-      <img id="slider" src="" >
-      <button class="buttonPizza2" onclick="next1()"> > </button>
+          <img id="slider" src="">
+          <button class="buttonPizza2" onclick="next1()"> > </button>
     </article>
-    <article id="box_inicio">
-      <img id="portadaLeft" src="css/Imagenes/portada/portada2.jpeg" width="23%" height="350px">
-      <img id="portada" src="css/Imagenes/portada/portada1.jpeg" width="50%" height="350px"> 
-       <img id="portadaRight" src="css/Imagenes/portada/portada15.jpeg" width="23%" height="350px">
-     
-        
+    <div id="box_inicio">
+      <div id="contentCarrousel">
+        <figure><img src="css/Imagenes/portada/portada1.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada2.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada3.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada4.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada5.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada6.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada7.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada8.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada9.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada10.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada11.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada12.jpeg"></figure>
+        <figure><img src="css/Imagenes/portada/portada13.jpeg"></figure>
 
 
-    </article>
-
-
-
-    <div class="pizza">
-    </div>
-    <div class="pizza_2"></div>
-
-
-    <footer>
-      <!--  <a href="https://www.facebook.com/Pizzer%C3%ADa-Escuby-Du-635322960271851/" target="_blank"> 
-    <img class="face" src="css/Imagenes/logo face.png">
-    </a> -->
-      <!--  <audio autoplay loop>
-        <source src="css/Imagenes/Whats New Scooby Doo - Simple Plan  Subtitulado al Español.mp3">
-          Audio element not support by browser
-        </audio>  -->
+      </div>
+    </div>  
+    <footer id="fooster">
+      <div id="footer0"></div>
+      <p><strong>DOMICILIOS</strong></br> </br> 652 12 12 </br>317 726 3472</p>
+      <p><strong>SIGUENOS EN NUESTRAS REDES SOCIALES</strong> </p>
+      
+      <a href="https://www.facebook.com/Pizzer%C3%ADa-Escuby-Du-635322960271851/" target="_blank">                
+        <img id="footer1" src="css/Imagenes/logoFacebook.png" >
+      </a>
+      <a href="https://www.instagram.com/pizzeriaescubydu/?hl=es-la" target="_blank">
+        <img id="footer2" src="css/Imagenes/logoInstagram.png"> 
+      </a>
+      
     </footer>
-
-  </div>
+    
+    </div>
   <script type="text/javascript" src="js/index.js"></script>
 
 </body>

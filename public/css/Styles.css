@@ -39,6 +39,7 @@ h1::first-line{
     background: url(Imagenes/Pizza.png) no-repeat;  
     background-size: contain;   
     animation: firts_1 5s linear infinite;    
+    
 }
 .pizza_2{
    width: 0.5%;
@@ -69,6 +70,7 @@ h1::first-line{
     list-style:none;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 8px 5px 5px rgb(238, 148, 30);
 } 
 .opciones >li{
     position:relative; 
@@ -86,13 +88,13 @@ h1::first-line{
     transition: all 0.5s;
 }
 .opciones .submenu1 li a:hover{
-   
     background: orange;
     transition: all 0.5s;
 }
 /* submenu1 */
 .submenu1{
     position: absolute;
+    z-index: 3;
     background: linear-gradient(90deg, 
     rgba(238, 148, 30, 0.3) 0%, 
     rgba(238, 148, 30, 1) 25%,
@@ -106,6 +108,7 @@ h1::first-line{
     opacity: 0; 
     transition:opacity 1.5s;
 }
+
 .submenu1 li a{
     display: block;
     color:white;
@@ -113,33 +116,13 @@ h1::first-line{
     padding: 5px ;
     font-family: cursive;
     font-size: 80%;  
+    
 }
 .opciones li:hover .submenu1 {
     visibility: visible;
     opacity: 1;
-}
+}    
 
-#box_inicio{
-    text-align: center;  
-} 
-#portadaLeft{
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85% ); 
-  border-radius: 2%;   
-  opacity: 0.5;  
-} 
-#portadaRight{     
-    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100% ); 
-    border-radius: 2%;
-    transform-style: preserve-3d;
-    opacity: 0.5;      
-  } 
-#portada{
-    box-shadow: 0 0 25px rgba(230, 223, 223, 0.8),
-    inset 0 0 5px rgba(255, 255, 255, 0.6); 
-    border-radius: 2%;     
-    margin-top: 1%;
-    
-}
 #box_pizza1{
     width: 100%;
     text-align: center;  
@@ -167,8 +150,8 @@ h1::first-line{
     color: white;
     font-size: 50px;  
     opacity: 0.5;  
-    height:100px;    
-    width: 100px; 
+    height:80px;    
+    width: 80px; 
     position: absolute;      
     left: 10%;
     top: 60%;
@@ -181,21 +164,13 @@ h1::first-line{
     color: white;
     font-size: 50px;  
     opacity: 0.5;  
-    height:100px;    
-    width: 100px; 
+    height:80px;    
+    width: 80px; 
     position: absolute;  
     right: 10%;
     top: 60%;        
  }  
-.face{
-width: 50px;
-height: 40px;
-background-size: contain;
-}
-footer{
-    position: absolute;
-    top: 100%;
-}
+
 @media screen and (max-width: 640px){
     h1{
         font-size: 40%;
@@ -233,7 +208,7 @@ footer{
         right: 3%;
     }
 } 
-@media screen and (min-width: 641px) and (max-width: 1200px){
+@media screen and (min-width: 641px) and (max-width: 1000px){
     h1{
         font-size: 85%;
         letter-spacing: 5px;
