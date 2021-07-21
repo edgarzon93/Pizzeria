@@ -7,7 +7,7 @@ var images3 = [
 var images4 = [
     'css/Imagenes/Menu_infantil.JPG'];
 var images5 = [
-    'css/Imagenes/hamb1.JPG','css/Imagenes/hamb2.JPG'];
+    'css/Imagenes/hamb1.JPG', 'css/Imagenes/hamb2.JPG'];
 var images6 = [
     'css/Imagenes/perros1.JPG'];
 var images7 = [
@@ -25,21 +25,23 @@ var images12 = [
 var images13 = [
     'css/Imagenes/adicionales1.JPG'];
 
+    styleEnc = {
+        "background-color": "white"
+    }
 
-var num = 0;
 
-function show(menu) {    
+function show(menu) {
     switch (menu) {
         case 'portada':
-            document.getElementById('box_inicio').style.display = 'block';   
-            document.getElementById('box_pizza1').style.display = 'none';     
-            break; 
+            document.getElementById('box_inicio').style.display = 'block';
+            document.getElementById('box_pizza1').style.display = 'none';
+            break;
         case 'pizza':
             menuActual = 'pizza'
             document.getElementById('box_pizza1').style.display = 'block';
             document.getElementById('encabezado').src = 'css/Imagenes/Pizza_header.JPG';
             document.getElementById('slider').src = 'css/Imagenes/pizza_c.png';
-            document.getElementById('encabezado').style.height = '70px';
+       
             document.getElementById('slider').style.height = '340px';
             document.getElementById('box_inicio').style.display = 'none';
             break;
@@ -144,6 +146,7 @@ function show(menu) {
 
 }
 function next1() {
+    var num = 0;
     let array;
     switch (menuActual) {
         case 'pizza':
